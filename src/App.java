@@ -1,14 +1,19 @@
 import dsa.*;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-        AVLTree avl = new AVLTree();
-        avl.insert(2);
-        avl.insert(6);
-        avl.insert(3);
-        avl.search(6);
-        avl.search(60);
-        avl.search(3);
-        avl.display();
+        BinSearchTree bst = new BinSearchTree();
+        bst.insert(7);
+        bst.insert(4);
+        bst.insert(3);
+        bst.insert(5);
+        bst.insert(10);
+        bst.insert(9);
+        bst.insert(11);
+        bst.insert(1);
+        bst.display();
+        // System.out.println(bst.SumOfRight());
+        System.out.println(bst.ProductOf2(5,3));
+        
     }
 }
